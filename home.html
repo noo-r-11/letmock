@@ -1,26 +1,64 @@
 <!doctype html>
 <html>
 <head>
+<script src="https://kit.fontawesome.com/16ae1bf27d.js" crossorigin="anonymous"></script>
 <style>
 img{
-border:3px solid white; border-radius:10px; background-color:white; margin-left:10px
+border:3px solid white; 
+border-radius:5px;
+ background-color:white; 
+ margin-right:10px;
+ margin-bottom:10px;
+ margin-top:5px;
+ 
  }
+ 
 body{
-overflow:auto;
 background-color:black;
 }
+
+a{
+font-weight:2;
+text-decoration:none;
+font-size:25px;
+text-align:center;
+padding-left:30px;
+color:white;
+}
+.card{
+width:135px;
+}
+form{ 
+position:absolute;
+opacity:0;
+width:135px;
+}
+.card:hover form{ opacity:1;}
+button{color:black;}
 </style>
 
 </head>
 <body>
-<h2 style="color:white;">HOME</h2>
-<script>
-<button onclick="window.location.href='b.html'">menu</button>
-</script>
-<br>
-<h4 style="color:white;">POPULAR</p4>
-<br>
+<main>
+<div style='display:flex;'>
+<h1 style='color:white; padding-left:100px;'><i style='color:white; padding-right:5px; ' class="fa-solid fa-ticket"></i>Letterfox </h1>
+<div style='text-align:center; padding-left:300px; padding-top:26px; color:white;'>
+<a href='home.html'>HOME</a>
+<a href=''>Favourites</a> 
+<a href=''>Watchlist</a>
+<a href=''>Profile</a>
+</div>
+</div>
+
+<div style='padding-left:50px; display:inline-block;'>
+<h2 style="color:white;">Popular</h2>
+<div class='card' >
 <img src=jen.jfif height=185 width=135 >
+<form action='favs.html' method='post'>
+<button type='submit' name='add' >add to favourites </button>
+<button type='submit' name='add' >add to watchlist </button>
+<form>
+</div>
 <img src=jesse.jfif height=185 width=135>
 <img src=jesse.jfif height=185 width=135>
 <img src=jesse.jfif height=185 width=135>
@@ -32,9 +70,16 @@ background-color:black;
 <img src=jesse.jfif height=185 width=135>
 <img src=jesse.jfif height=185 width=135>
 <img src=jesse.jfif height=185 width=135>
-<br>
-<h4>recommended to you</p4>
-<br>
+</div>
+
+<div style='padding-left:50px;'>
+<h3 style='color:white;'>Recommended To You</h3>
+<img src=jen.jfif height=185 width=135>
+<img src=jesse.jfif height=185 width=135>
+<img src=jene.jfif height=185 width=135>
+<img src=jesse.jfif height=185 width=135>
+<img src=jen.jfif height=185 width=135>
+<img src=jesse.jfif height=185 width=135>
 <img src=jen.jfif height=185 width=135>
 <img src=jesse.jfif height=185 width=135>
 <img src=jene.jfif height=185 width=135>
@@ -47,12 +92,11 @@ background-color:black;
 <img src=jesse.jfif height=185 width=135>
 <img src=jen.jfif height=185 width=135>
 <img src=jesse.jfif height=185 width=135>
-<img src=jen.jfif height=185 width=135>
-<img src=jesse.jfif height=185 width=135>
-<img src=jene.jfif height=185 width=135>
-<img src=jesse.jfif height=185 width=135>
-<img src=jen.jfif height=185 width=135>
-<img src=jesse.jfif height=185 width=135>
-<a
+</div>
+</main>
 </body>
+<footer>
+<hr>
+<p style='text-align:center; color:white'>all rights reserved<p>
+</footer>
 </html>
